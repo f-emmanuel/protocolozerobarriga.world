@@ -1,466 +1,342 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>César Galeano | Home :: César Galeano</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
 
-    <link rel="stylesheet" href="./assets/css/com.css">
 
-    <!-- Título da Página -->
-    <title>Protocolo Zero Barriga</title>
-    
-    <style type="text/css">
-      header {
-        color: white;
-        background-image: url("assets/img/bg.jpeg");
-        background-color: rgba(0, 0, 0, 0.6);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-blend-mode: darken;
-      }
-    </style>
-    
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '668917074486774');
-fbq('track', 'PageView_br');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=668917074486774&ev=PageView_BR&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    
-  </head>
-  <body>
-    
-    <header class="py-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <!-- Imagem Ultrasecreto -->
-            <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
-
-            <!-- Headline -->
-            <h3 class="my-4"><b>6 ingredientes Simples Que Fazem O Corpo Queimar Até 13Kg Em 30 Dias</b></h3>
-
-            <!-- VSL -->
-            <div id="vid_62e957180ad222000c7892cc" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62e957180ad222000c7892cc" src="https://images.converteai.net/6ca20b5e-82dc-4a84-91c5-06a83f09f688/players/62e957180ad222000c7892cc/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62e957180ad222000c7892cc" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62e957180ad222000c7892cc">var s=document.createElement("script");s.src="https://scripts.converteai.net/6ca20b5e-82dc-4a84-91c5-06a83f09f688/players/62e957180ad222000c7892cc/player.js",s.async=!0,document.head.appendChild(s);</script>
-            
-            <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/nbkhA61" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
-              </a>
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+                            
+                            <li><a href="contact.html">Contato</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				      <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Digite seu termo de pesquisa..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+								</div>
+							</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				    <ul class="icon1 sub-icon1 profile_img">
+					 
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+						  <li class="list_desc"><h4><a href="https://www.google.com/"></a></h4><span class="actual">1 x
+                          $12.00</span></li>
+						  <div class="login_buttons">
+							 <div class="check_button"><a href="checkout.html">Check out</a></div>
+							 <div class="login_button"><a href="login.html">Login</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	</div>
+	<div class="banner">
+	<!-- start slider -->
+       <div id="fwslider">
+         <div class="slider_container">
+            <div class="slide"> 
+                <!-- Slide image -->
+               <img src="images/slider1.jpg" class="img-responsive" alt=""/>
+                <!-- /Slide image -->
+                <!-- Texts container -->
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <!-- Text title -->
+                        <h1 class="title"><br></h1>
+                        <!-- /Text title -->
+                    </div>
+                </div>
+               <!-- /Texts container -->
             </div>
-          </div>
+            <!-- /Duplicate to create more slides -->
+            <div class="slide">
+               <img src="images/slider2.jpg" class="img-responsive" alt=""/>
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <h1 class="title"><br></h1>
+                    </div>
+                </div>
+            </div>
+            <!--/slide -->
         </div>
+        <div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+       </div>
+       <!--/slider -->
       </div>
-    </header>
-
-    <section class="comments py-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="fb-comments" style="margin-top: 5px;">
-              <div class="fb-comments-header">
-                <span>21 comentarios</span>
-              </div>
-              <div class="fb-comments-wrapper" id="2">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m2.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Valesca Silva</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Amei vou fazer hoje mesmo pois estou em processo de emagrecimento. Muito obrigada 😘</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>8</likes>
-                        
-                        <date>4 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="3">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m3.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Vitória Pereira</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Ele também me ajudou perdi 22kg obrigado, e ajuda até hoje com essas receitas deliciosas</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>9</likes>
-                        
-                        <date>5 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="4">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m4.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Mariana Martins</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Esse vídeo mudou minha vida, já são 20 kilos a menos em 4 meses ,agradecida</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>11</likes>
-                        
-                        <date>12 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="5">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m5.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Juliana Castro</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Tomei essa vitamina durante 1 mês, acompanhada da dieta de açúcar e carboidratos, perdir 5 quilos, e me sentia bem melhor, faz um ano, agora vou voltar a tomar novamente.</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>15</likes>
-                        
-                        <date>19 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="6">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m6.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Isabella Lopes</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Estou feliz, a 7 meses atrás eu estava com 78kg e hoje estou com 54kg até postei a respeito no meu perfil aqui no face o antes e depois 😘😘😘</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>17</likes>
-                        
-                        <date>24 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="7">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m7.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Roberta Gomes</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Realmente funciona, minha barriga tem diminuído a cada dia. Obrigada por compartilhar 🥰</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>18</likes>
-                        
-                        <date>26 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="9">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m11.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Rafaela Souza</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Emagrece mesmo gente receita testada e aprovada</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>22</likes>
-                        
-                        <date>39 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Carregar mais 5 comentários</button>
-              <div style="display:none" id="more">
-                <div class="fb-comments-wrapper">
-                  <table class="fb-comments-comment" id="10">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m12.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Ana Sofia</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Maravilhosa melhor de todas fez 7dias tomando e 7 klos já conseguir eliminar tô muito feliz obrigado 😍😍😍</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>41</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+	  <div class="main">
+		<div class="content-top">
+			<h2>Empresas</h2>
+			<p>"A voz que você confia está de volta, trazendo o melhor conteúdo para você."</p>
+			<div class="close_but"><i class="close1"> </i></div>
+				<ul id="flexiselDemo3">
+				<li><img src="images/board1.jpg" /></li>
+				<li><img src="images/board2.jpg" /></li>
+				<li><img src="images/board3.jpg" /></li>
+				<li><img src="images/board4.jpg" /></li>
+				<li><img src="images/board5.jpg" /></li>
+			</ul>
+		<h3>Empresas</h3>
+			<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+	<div class="content-bottom">
+		<div class="container">
+			<div class="row content_bottom-text">
+			  <div class="col-md-7">
+				<h3>César <br>Galeano</h3>
+				<p class="m_1">Olá pessoal! Meu nome é Cesar Galeano e sou repórter e publicitário. Aqui no meu perfil, vou compartilhar com vocês as principais notícias do momento, curiosidades e reflexões sobre o mundo da comunicação e da publicidade. Acompanhe-me nesta jornada e vamos trocar ideias juntos! 📰🗣️</p>
+				<p class="m_2"></p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="features">
+		<div class="container">
+			<h3 class="m_3">Parceiros</h3>
+			<div class="close_but"><i class="close1"> </i></div>
+			  <div class="row">
+				<div class="col-md-3 top_box">
+				  <div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic1.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Cesar Galeano</h2>
+                        <p>O cliente deve ficar muito feliz, ele é um bom amigo.</p>
+                      </div>
+                   </a> </div
+                  </div>
+                  <h4 class="m_4"><a href="https://www.instagram.com/batistij/">Medico Oftalmologista 👀</a></h4>
+                  <p class="m_5">Atendimento na CLINICOR</p>
                 </div>
-                <div class="fb-comments-wrapper" id="11">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m15.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Laura Flores</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Eu já estou tomando, já eliminei 7 kls, já fez muita diferença, minhas roupas estavam todas apertadas,  ágora já estão largas, estou num pós operatório de coluna por isso engordei muito 15 Kg, estava sentindo muita dor agora amenizou muito depois que emagreci já consigo andar mais q antes 🙏🙏🙏🙏🙏🙏</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>40</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper" id="12">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m16.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Daniela Costa</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Muito Obrigada tem me ajudado e muito,Adorei ...Durmo super bem e vendo resultado ..🌹🥰🙋</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>47</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper" id="13">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m17.jpeg"></td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Juliana Dias</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Em duas semanas comecei a ver resultados, muito bom</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>50</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper">
-                  <table class="fb-comments-comment" id="14">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m18.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Isabelle Correia</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Meu irmão perdeu 6 kl em 15 dias... vou começar hj rsrs</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>66</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <!-- Botão 2 -->
-            <div id="cta2" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/nbkhA61" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-dark py-3 text-center">
-      <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
-    </footer>
-
-    <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 1770000); // temporização da Call to Action (em milissegundos)
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./assets/js/com.js"></script>
-  </body>
+                <div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic2.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Cesar Galeano</h2>
+                        <p>O cliente deve ficar muito feliz, ele é um bom amigo</p>
+                      </div>
+                    </a> </div>
+                   <h4 class="m_4"><a href="https://www.instagram.com/siimportados/">Si Importados</a></h4>
+                   <p class="m_5">13 Anos de Qualidade e confiança 
+                   em Saltos Del Guairá.. Paraguay 🇵🇾</p>
+				</div>
+				<div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic3.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Cesar Galeano</h2>
+                        <p>O cliente deve ficar muito feliz, ele é um bom amigo</p>
+                      </div>
+                    </a> </div>
+                   <h4 class="m_4"><a href="https://www.instagram.com/siimportados/">Si Importados</a></h4>
+                   <p class="m_5">Assistencia Tecina</p>
+				</div>
+				<div class="col-md-3 top_box1">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic4.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Cesar Galeano</h2>
+                        <p>O cliente deve ficar muito feliz, ele é um bom amigo</p>
+                      </div>
+                     </a> </div>
+                   <h4 class="m_4"><a href="https://www.instagram.com/siimportados/">Si Importados</a></h4>
+                   <p class="m_5">Vendas de Celulares 
+                   e Acessórios</p>
+				</div>
+			</div>
+		 </div>
+	    </div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4></h4>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4></h4>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>ATENÇÃO AO CLIENTE</h4>
+							<li><a href="https://wa.me/556792559189">WhatsApp</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>César Galeano</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Digite seu e-mail';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="https://www.facebook.com/cesarmendezgaleano"><span> </span></a></li>
+							  <li class="twitter"><a href="https://twitter.com/CesarGaleanoCG"><span> </span></a></li>
+							  <li class="instagram"><a href="https://www.instagram.com/cesargaleanooo/"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© César Galeano<a href="https://www.instagram.com/cesargaleanooo" target="_blank"></a></p>
+		            </div>
+					  <dl id="sample" class="dropdown">
+				        <dt><a href="#"><span>Mudar de Região</span></a></dt>
+				        <dd>
+				            <ul>
+				                <li><a href="#">Brasil<img class="flag" src="images/as.png" alt="" /><span class="value">Paraguay</span></a></li>
+				                <li><a href="#">United States<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
+				                <li><a href="#"><img class="flag" src="images/nz.png" alt="" /><span class="value"></span></a></li>
+				                <li><a href="#"><img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
+				                <li><a href="#"><img class="flag" src="images/uk.png" alt="" /><span class="value"></span></a></li>
+				                <li><a href="#"><img class="flag" src="images/us.png" alt="" /><span class="value"></span></a></li>
+				            </ul>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
 </html>
